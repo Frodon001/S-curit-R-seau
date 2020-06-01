@@ -280,7 +280,9 @@ Interface addresse
 
     Router(config)#int fa0/1
     Router(config-if)#ipv6 dhcp server STATELESS
-    Router(config-if)#ipv6 addresse <routerAdresse>
+    Router(config-if)#no ipv6 nd managed-config-flag
+    Router(config-if)#ipv6 nd other-config-flag
+    ((Router(config-if)#ipv6 addresse <routerAdresse>))
 
 > Client
 
