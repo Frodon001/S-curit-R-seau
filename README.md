@@ -298,7 +298,7 @@ Interface addresse
         ipv6 addresse 2001:DB8:1::254/64
         ipv6 dhcp server STATELESS
 	no ipv6 nd managed-config flag
-        no ipv6 nd other-config flag
+      	no ipv6 nd other-config flag
 
 > Client
 
