@@ -240,7 +240,7 @@ exit
 
 service password-encryption
 
-ip domaine-name formation.lab
+ip domain-name formation.lab
 username cisco password class
 crypto key generate rsa
 1024
