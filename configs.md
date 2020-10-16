@@ -108,9 +108,9 @@ exit
 
 service password-encryption
 
-ip domaine-name formation.lab
+ip domain-name formation.lab
 username cisco password class
-crypto key generate rsa
+crypto key generate rsa 
 1024
 access-list 2 permit 10.1.1.0 0.0.0.255
 
