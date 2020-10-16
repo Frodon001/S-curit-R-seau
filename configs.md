@@ -322,6 +322,8 @@ subnet 10.1.30.0 netmask 255.255.255.   0 {
 ```
 :rocket: `service isc-dhcp-server start`
 
+!Il faut créer le dossier et fichier suivant : "/etc/dhcp/rndc-keys/rndc.key"!
+
 ### Service DNS: 
 https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-14-04
 
