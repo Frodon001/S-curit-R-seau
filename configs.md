@@ -308,13 +308,13 @@ subnet 10.1.1.0 netmask 255.255.255.0 {
 }
 
 subnet 10.1.20.0 netmask 255.255.255.0 {
-    deny unkown-clients;
+    deny unknown-clients;
     range 10.1.20.51 10.1.20.99;  	
     option routers 10.1.20.254;
     option broadcast-address 10.1.20.255;
 }
 
-subnet 10.1.30.0 netmask 255.255.255.0 {
+subnet 10.1.30.0 netmask 255.255.255.   0 {
     range 10.1.30.51 10.1.30.99;  
     option routers 10.1.30.254;
     option broadcast-address 10.1.30.255;
