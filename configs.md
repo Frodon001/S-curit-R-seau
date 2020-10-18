@@ -502,7 +502,7 @@ IN	NS	SRV-01.formation.lab.
 ; A-records
 ```
 
-> chmod 664 /etc/bind/zones/db.1.10 && chmod 664 /etc/bind/zones/db.formation.lab
+> chmod 664 /etc/bind/zones/db.1.10.1 chmod 664 /etc/bind/zones/db.formation.lab
 
 :rocket: `service bind9 start`
 
