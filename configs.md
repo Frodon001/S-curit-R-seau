@@ -130,6 +130,7 @@ en
 conf t
 hostname SW-01
 no ip domain-lookup
+no ip routing
 
 ! -- Initialisation du service VTP --
 
