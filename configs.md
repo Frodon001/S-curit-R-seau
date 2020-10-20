@@ -34,7 +34,7 @@ vtp mode server
 ! -- configuration d'une ACL nommée --
 
 ip access-list extended IT-PROD
-permit tcp any 10.1.1.0 0.0.0.255 established 
+permit tcp 10.1.1.0 0.0.0.255 any established 
 permit udp any any eq 67
 permit udp any any eq 68
 ! a vérifier niveau sécu pour les permit udp!
