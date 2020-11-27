@@ -12,7 +12,7 @@ ip domain-name Formation.lab
 ! -- configuration des interfaces physique --
 
 int F0/0
-ip address 10.1.1.1 255.255.255.0
+ip address 10.1.1.254 255.255.255.0
 ip nat inside
 no shut
 
@@ -22,8 +22,8 @@ ip nat outside
 no shut 
 
 ip dhcp pool Pool1
-    network 10.1.1.128 255.255.255.192
-    default-router 10.1.1.1
+    network 10.1.1.0 255.255.255.192
+    default-router 10.1.1.254
     dns-server 8.8.8.8
     domain-name Formation.lab
 
@@ -37,9 +37,9 @@ ip nat inside source list 1 interface f0/1 overload
 #Static config for eth0
 auto eth0
 iface eth0 inet static
-	address 10.1.1.2
+	address 10.1.1.253
 	netmask 255.255.255.0
-	gateway 10.1.1.1
+	gateway 10.1.1.254
 #
 ```
 
