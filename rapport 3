@@ -22,7 +22,7 @@ ip nat outside
 no shut 
 
 ip dhcp pool Pool1
-    network 10.1.1.0 255.255.255.192
+    network 10.1.1.0 255.255.255.0
     default-router 10.1.1.254
     dns-server 8.8.8.8
     domain-name Formation.lab
