@@ -71,3 +71,30 @@ dans edit config décocher les 2 dernières lignes
 ⇒ on empoisonne le cache des machines en donnant des fausses infomations
 
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11f36a71-01cd-476f-9a19-fb38b77d6da3/Unknown.jpeg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11f36a71-01cd-476f-9a19-fb38b77d6da3/Unknown.jpeg)
+
+
+# Vérifiez la configuration du serveur Rogue-DHCP afin que RED-01 intercepte le trafic
+
+# etc/default/isc-dhcp-server
+
+DHCPD CONF=/etc/dhcp/dhcpd.conf
+INTERFACES="eth0"
+
+
+# /etc/dhcp/dhcpd.conf
+
+default-lease-time 3600;
+max-lease-time 7200;
+
+
+option domain-name "Formation.lab";
+
+subnet 10.1.1.0 netmask 255.255.255.0 {
+  range 10.1.1.51 10.1.1.99;
+  option subnet-mask 255.255.255.0;
+  option broadcast-address 10.1.1.255;
+  option routers 10.1.1.254;
+}
+
+
+
